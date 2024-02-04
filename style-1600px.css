@@ -447,3 +447,32 @@ img {
     position: absolute;
     background-size: cover;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.footer{
+    background-color: black;
+}
+.footer__link-home{
+    width: 82px;
+    height: 52px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    position: relative;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+.footer__link-home-text{
+    width: 72.493px;
+    margin: 3.55px 4.75px;
+    height: 44.909px;
+    text-align: center;
+    font-size: 19.014px;
+    line-height: 120%; /* 22.817px */
+}
+.bamboo{
+    position: absolute;
+    top: 24px;
+    left: 10px;
+}
