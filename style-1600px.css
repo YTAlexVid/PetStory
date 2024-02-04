@@ -479,11 +479,11 @@ img {
     left: 10px;
 }
 
-.footer__top .container{
+.footer__top{
     display: flex;
     justify-content: space-between;
 }
-.footer__bottom .container{
+.footer__bottom{
     display: flex;
 }
 .footer__subscribe-text{
