@@ -380,15 +380,16 @@ img {
     text-align: center;
 }
 .testimonial{
+    background: linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 17.572%,rgba(243, 169, 248, 0.66) 42.576%,rgb(224, 216, 240) 78.53%,rgb(234, 247, 254) 135.84%,rgb(234, 247, 254) 161.995%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 17.572%,rgba(243, 169, 248, 0.66) 42.576%,rgb(224, 216, 240) 78.53%,rgb(234, 247, 254) 135.84%,rgb(234, 247, 254) 161.995%);
+    padding: 2px;
+    border-radius: 22px;
+}
+.testimonial__inner{
     padding: 15px;
     color: black;
-    /* testimonials */
     min-width: 238px;
     height: 361px;
-    /* pink_gradient */
     border-radius: 20px;
-
-    /* gray_light */
     background: rgb(241, 243, 242);
 }
 .testimonal__header{
@@ -446,4 +447,87 @@ img {
     transform: rotate(-10deg);
     position: absolute;
     background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.footer{
+    background-color: black;
+    padding-top: 40px;
+}
+.footer__link-home{
+    width: 82px;
+    height: 52px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    position: relative;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+.footer__link-home-text{
+    width: 72.493px;
+    margin: 3.55px 4.75px;
+    height: 44.909px;
+    text-align: center;
+    font-size: 19.014px;
+    line-height: 120%; /* 22.817px */
+}
+.bamboo{
+    position: absolute;
+    top: 24px;
+    left: 10px;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.footer__bottom{
+    display: flex;
+}
+.footer__subscribe-text{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+.footer__input-field{
+    width: 228px;
+    height: 42px;
+    border-radius: 2px;
+    border: solid 2px rgb(254, 143, 24);
+    background-color: transparent;
+    color: rgb(189, 189, 189);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    padding-left: 10px;
+}
+.footer__input-button{
+    border: 1px solid rgb(51, 59, 65);
+    border-radius: 5px;
+    background: rgb(241, 243, 242);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+    width: 129px;
+    height: 42px;
+}
+.footer__donate{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(121.04deg, rgb(249, 128, 75) -4.058%,rgb(254, 144, 19) 108.987%);
 }
