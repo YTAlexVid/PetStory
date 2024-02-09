@@ -572,6 +572,9 @@ img {
     }
     gap: 48px;
 }
+.footer__subscribe-text{
+    margin-bottom: 24px;
+}
 .footer__credits{
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -579,4 +582,11 @@ img {
     line-height: 130%;
     letter-spacing: 0;
     text-align: left;
+}
+
+
+@media screen and (max-width: 1580px){
+    .about__flowers{
+        display: none;
+    }
 }
