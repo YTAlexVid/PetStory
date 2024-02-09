@@ -448,7 +448,6 @@ img {
     position: absolute;
     background-size: cover;
 }
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
@@ -564,4 +563,12 @@ img {
         color: rgb(253, 141, 30);
     }
     gap: 48px;
+}
+.footer__credits{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 130%;
+    letter-spacing: 0;
+    text-align: left;
 }
