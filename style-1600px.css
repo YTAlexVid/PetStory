@@ -448,6 +448,9 @@ img {
     position: absolute;
     background-size: cover;
 }
+.reviews__flowers{
+    overflow: hidden;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
