@@ -30,6 +30,9 @@ h3{
     height: 52px;
     display: flex;
     gap: 58px;
+    li:nth-child(2) a{
+        color: rgb(253, 141, 30);
+    }
 }
 .header__link a{
     text-decoration: none;
@@ -455,6 +458,7 @@ img {
 .footer{
     background-color: black;
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 .footer__link-home{
     width: 82px;
@@ -561,8 +565,9 @@ img {
     display: flex;
     a{
         color: white;
+        text-decoration: none;
     }
-    a:first-child{
+    li:first-child a{
         color: rgb(253, 141, 30);
     }
     gap: 48px;
