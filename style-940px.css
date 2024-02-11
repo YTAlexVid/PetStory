@@ -1,8 +1,16 @@
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1320px) {
     .container{
         max-width: 940px;
     }
     .about__backstage-image img{
         object-fit: cover;
+    }
+    .about__card{
+        width: 294px !important;
+        height: 354px;
+    }
+    .about__card-image{
+        width: 294px;
+        height: 294px;
     }
 }
