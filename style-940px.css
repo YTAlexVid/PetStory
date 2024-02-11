@@ -33,4 +33,7 @@
     .about__button-cards-next{
         left: 55%;
     }
+    .testimonial__inner{
+        min-width: 258px;
+    }
 }
