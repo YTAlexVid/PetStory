@@ -1,5 +1,45 @@
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1320px) {
     .container{
         max-width: 940px;
+    }
+    .about__backstage-image img{
+        object-fit: cover;
+    }
+    .about .splide__slide__row{
+        height: 354px !important;
+    }
+    .about .splide__slide__row:first-child{
+        margin-bottom: 94px !important;
+    }
+    .about__card{
+        width: 294px !important;
+        height: 354px;
+        margin-left: 10px;
+    }
+    .about__card-image{
+        width: 290px;
+        height: 290px;
+    }
+    .about__cards{
+        position: relative;
+    }
+    .about__button-cards{
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .about__button-cards-prev{
+        left: 45%;
+    }
+    .about__button-cards-next{
+        left: 55%;
+    }
+    .testimonial__inner{
+        min-width: 258px;
+    }
+    .footer__media{
+        margin-right: 178px;
+    }
+    .footer__navigation{
+        margin-right: 88px
     }
 }
