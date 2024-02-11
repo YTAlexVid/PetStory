@@ -36,4 +36,10 @@
     .testimonial__inner{
         min-width: 258px;
     }
+    .footer__media{
+        margin-right: 178px;
+    }
+    .footer__navigation{
+        margin-right: 88px
+    }
 }
