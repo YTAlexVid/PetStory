@@ -2,4 +2,7 @@
     .container{
         max-width: 940px;
     }
+    .about__backstage-image img{
+        object-fit: cover;
+    }
 }
