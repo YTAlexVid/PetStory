@@ -2,4 +2,16 @@
     .container{
         max-width: 640px;
     }
+    .header__link-home{
+        border: none;
+    }
+    .header__link:not(:first-child){
+        display: none;
+    }
+    .header__copyright{
+        display: none;
+    }
+    .header__menu-burger{
+        display: block;
+    }
 }
