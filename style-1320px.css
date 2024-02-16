@@ -4,6 +4,12 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+button{
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 400;
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -590,7 +596,19 @@ h3{
 
 
 @media screen and (max-width: 1580px){
-    .about__flowers {
+
+    .about__flower:nth-child(1) {
+        width: 241px;
+        height: 180px;
+    }
+    .about__flower:nth-child(2) {
         display: none;
+    }
+    .about__flower:nth-child(3){
+        background-image: url(./assets/images/flower3.png);
+        width: 385px;
+        height: 202px;
+        left: -190px;
+        bottom: -100px;
     }
 }
