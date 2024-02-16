@@ -4,6 +4,12 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+button{
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 400;
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -25,7 +31,7 @@ h3{
     line-height: 130%; /* 46.8px */
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.header__links{
+.header__menu-list{
     align-items: center;
     height: 52px;
     display: flex;
@@ -33,6 +39,42 @@ h3{
     li:nth-child(2) a{
         color: rgb(253, 141, 30);
     }
+}
+.header__menu-burger{
+    display: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+}
+.header__menu-burger span{
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    background: white;
+    border-radius: 10px;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.header__menu-burger::before{
+    content: "";
+    top:0;
+    position: absolute;
+    left:0;
+    width:100%;
+    height: 2px;
+    background: white;
+    border-radius: 10px;
+}
+.header__menu-burger::after{
+    content: "";
+    bottom:0;
+    position: absolute;
+    left:0;
+    width:100%;
+    height: 2px;
+    background: white;
+    border-radius: 10px;
 }
 .header__link a{
     text-decoration: none;
@@ -590,7 +632,19 @@ h3{
 
 
 @media screen and (max-width: 1580px){
-    .about__flowers {
+
+    .about__flower:nth-child(1) {
+        width: 241px;
+        height: 180px;
+    }
+    .about__flower:nth-child(2) {
         display: none;
+    }
+    .about__flower:nth-child(3){
+        background-image: url(./assets/images/flower3.png);
+        width: 385px;
+        height: 202px;
+        left: -190px;
+        bottom: -100px;
     }
 }
