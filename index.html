@@ -459,7 +459,7 @@
     let splideAbout = new Splide( '.splide', {
         type: 'loop',
         perMove: 1,
-        perPage: 3,
+        perPage: 2+((window.innerWidth>960)?1:0),
         pagination: false,
         arrows: false,
         grid: {
@@ -476,6 +476,11 @@
     })
     document.querySelector('.about__button-cards-next').addEventListener('click', e=>{
         splideAbout.go('+1');
+    })
+    splideAbout.on('resize', e=>{
+        splideAbout.options = {
+            perPage: 2+((window.innerWidth>960)?1:0),
+        };
     })
 </script>
 </html>
