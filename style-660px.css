@@ -2,8 +2,34 @@
     .container{
         max-width: 640px;
     }
+    .container-header-top{
+        height: unset;
+    }
+    .header__menu-list{
+        margin-left: 20px;
+        height: unset;
+        width: 47px;
+    }
+    .header__menu-burger{
+        margin-right: 20px;
+    }
     .header__link-home{
         border: none;
+        height: unset;
+        .header__link-home-text{
+            width: 47px;
+            font-size: 12.29px;
+            margin: 3.55px 0 3.55px;
+            height: unset;
+        }
+        .bamboo{
+            top: 17px;
+            left: -14px;
+            img {
+                width: 45px;
+                height: 13px;
+            }
+        }
     }
     .header__link:not(:first-child){
         display: none;
@@ -34,5 +60,11 @@
     .header__content-button{
         margin-left: -330px;
         margin-bottom: 40px;
+    }
+    .about__backstage-image{
+        display: none;
+    }
+    .about__backstage-content{
+        margin-left: 20px;
     }
 }

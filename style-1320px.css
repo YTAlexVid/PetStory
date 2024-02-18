@@ -42,8 +42,8 @@ h3{
 }
 .header__menu-burger{
     display: none;
-    width: 30px;
-    height: 22px;
+    width: 18px;
+    height: 10px;
     position: relative;
 }
 .header__menu-burger span{
