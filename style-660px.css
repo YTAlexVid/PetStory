@@ -68,6 +68,9 @@
         margin-left: 20px;
     }
     .about__flower:nth-child(2){
+        width:231px;
+        height: 476px;
         display: block;
+        top: -65px;
     }
 }
