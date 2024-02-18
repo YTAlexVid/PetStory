@@ -64,6 +64,16 @@
     .about__backstage-image{
         display: none;
     }
+    .container-backstage{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .about__backstage-content-text:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .about__backstage-content-subtitle{
+        margin-bottom: 20px;
+    }
     .about__backstage-content{
         margin-left: 20px;
     }
