@@ -14,4 +14,25 @@
     .header__menu-burger{
         display: block;
     }
+    .header__content{
+        margin-right: 60px;
+    }
+    .header__content-title{
+        height: 237px;
+        width: 237px;
+        margin-bottom: 0;
+        p{
+
+            width: 256px;
+            height: 204px;
+            top: 37px;
+            left: 33px;
+            font-size: 54.29px;
+            letter-spacing: 0;
+        }
+    }
+    .header__content-button{
+        margin-left: -330px;
+        margin-bottom: 40px;
+    }
 }
