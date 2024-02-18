@@ -632,7 +632,11 @@ h3{
     text-align: left;
 }
 
-
+@media screen and (min-width: 1320px){
+    .about__button-cards-prev{
+        order: -1;
+    }
+}
 @media screen and (max-width: 1580px){
 
     .about__flower:nth-child(1) {

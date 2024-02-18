@@ -83,4 +83,19 @@
         display: block;
         top: -65px;
     }
+    .about__card{
+        width: 285px !important;
+        margin-left: 20px;
+        margin-right: 0 !important;
+    }
+    .about__card-image{
+        width: 281px;
+        height: 281px;
+    }
+    .about__button-cards-next{
+        left: 58%;
+    }
+    .about__button-cards-prev{
+        left: 43%;
+    }
 }
