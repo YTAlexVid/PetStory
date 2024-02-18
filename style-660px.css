@@ -67,4 +67,7 @@
     .about__backstage-content{
         margin-left: 20px;
     }
+    .about__flower:nth-child(2){
+        display: block;
+    }
 }
