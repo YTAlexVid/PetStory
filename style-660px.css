@@ -98,4 +98,16 @@
     .about__button-cards-prev{
         left: 43%;
     }
+
+    .pick-and-feed__process-steps{
+        position: relative;
+    }
+    .pick-and-feed__process-arrow img:first-child{
+        display: none;
+    }
+    .pick-and-feed__process-arrow img:last-child{
+        position: absolute;
+        display: block;
+        transform: translateX(-50px) translateY(-15px);
+    }
 }

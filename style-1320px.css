@@ -375,8 +375,11 @@ h3{
     text-align: center;
     margin-bottom: 40px;
 }
-.pick-and-feed__process-arrow{
+.pick-and-feed__process-arrow img:first-child{
     margin-top: 62px;
+}
+.pick-and-feed__process-arrow img:last-child{
+    display: none;
 }
 .pick-and-feed_process-step-image{
     display: flex;
