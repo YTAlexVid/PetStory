@@ -536,7 +536,7 @@ h3{
     left: 10px;
 }
 
-.footer__top{
+.footer__main{
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
@@ -607,6 +607,9 @@ h3{
 .footer__bottom{
     display: flex;
     align-items: end;
+}
+.footer__top .footer__media{
+    display: none;
 }
 .footer__media{
     margin-right: 287px;

@@ -158,5 +158,25 @@
     .reviews__title{
         margin-top: 60px;
     }
-
+    .footer__top .footer__media{
+        display: block;
+        margin: 0;
+    }
+    .footer__bottom .footer__media{
+        display: none;
+    }
+    .footer__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        .designer{
+            margin-bottom: 10px;
+        }
+    }
+    .footer__navigation{
+        margin-right: 65px;
+    }
 }
