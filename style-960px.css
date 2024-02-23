@@ -48,6 +48,16 @@
     .about__button-cards-next{
         left: 55%;
     }
+    .container-pick-and-feed{
+        max-width: 908px;
+        padding-right: 32px;
+    }
+    .pick-and-feed__info-text:not(:nth-child(5)){
+        margin-left: 49px
+    }
+    .pick-and-feed__info-subtitle{
+        margin-left: 49px;
+    }
     .testimonial__inner{
         min-width: 258px;
     }
@@ -56,5 +66,11 @@
     }
     .footer__navigation{
         margin-right: 88px
+    }
+    .footer__media-text{
+        display: none;
+    }
+    .footer__subscribe{
+        display: none;
     }
 }
