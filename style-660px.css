@@ -123,4 +123,30 @@
         display: block;
         transform: translateX(-50px) translateY(-15px);
     }
+    .testimonials{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .testimonial__inner{
+        overflow-y: hidden;
+        height: 72px;
+    }
+    .container-testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews__feedback{
+        margin-bottom: 80px;
+    }
+    .reviews__flower{
+        width: 200px;
+        height: 200px;
+        right: -84px;
+        bottom: -68px;
+    }
+    .reviews__title{
+        margin-top: 60px;
+    }
+
 }
