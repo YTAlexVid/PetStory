@@ -67,4 +67,10 @@
     .footer__navigation{
         margin-right: 88px
     }
+    .footer__media-text{
+        display: none;
+    }
+    .footer__subscribe{
+        display: none;
+    }
 }
