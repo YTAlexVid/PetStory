@@ -35,6 +35,19 @@
         text-align: center;
         text-transform: uppercase;
     }
+    .about__backstage-content{
+        margin-left: 10px;
+        width: 300px;
+    }
+    .about__backstage-content-title{
+        font-size: 24px;
+    }
+    .about__backstage-content-text{
+        font-size: 16px;
+    }
+    .about__backstage-content-subtitle{
+        font-size: 24px;
+    }
     .about__flower:nth-child(1){
         width: 85px;
         height: 71px;
