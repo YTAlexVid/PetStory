@@ -113,4 +113,24 @@
         top: -100px;
         right: 0;
     }
+    .reviews__title{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .testimonial{
+        width: 300px;
+    }
+    .testimonials{
+        max-height: 330px;
+    }
+    .reviews__feedback{
+        width: 240px;
+        margin-bottom: 60px;
+    }
+    .reviews__flower{
+        width: 75px;
+        height: 75px;
+        right: -30px;
+        bottom: -30px;
+    }
 }
