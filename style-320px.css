@@ -1,0 +1,17 @@
+@media screen and (max-width: 660px) {
+    .container{
+        max-width: 320px;
+    }
+    .header__content-button{
+        display: none;
+    }
+    .header__content-title{
+        width: 119px;
+        height: 119px;
+        p{
+            width: 128.13px;
+            height: 102.44px;
+            font-size: 28px;
+        }
+    }
+}
