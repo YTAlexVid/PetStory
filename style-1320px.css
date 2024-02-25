@@ -185,6 +185,9 @@ h3{
         object-fit: contain;
     }
 }
+.about__backstage-button{
+    display: none;
+}
 .about__backstage-content{
     max-width: 465px;
     margin-left: 87px;

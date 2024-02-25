@@ -20,4 +20,20 @@
             font-size: 28px;
         }
     }
+    .about__backstage-button{
+        display: block;
+        margin:20px auto 30px;
+        border-radius: 25px;
+        background: linear-gradient(121.04deg, rgb(249, 128, 75) -4.058%,rgb(254, 144, 19) 108.987%);
+        width: 298px;
+        height: 54px;
+        border: none;
+        /* btn. */
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
