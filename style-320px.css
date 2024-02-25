@@ -28,12 +28,27 @@
         width: 298px;
         height: 54px;
         border: none;
-        /* btn. */
         font-size: 16px;
         font-weight: 500;
         line-height: 140%;
         letter-spacing: 0;
         text-align: center;
         text-transform: uppercase;
+    }
+    .about__flower:nth-child(1){
+        width: 85px;
+        height: 71px;
+        bottom: -2px;
+    }
+    .about__flower:nth-child(2){
+        width: 105px;
+        height: 217px;
+        right: -74px;
+        top: 35px;
+    }
+    .about__flower:nth-child(3){
+        width: 138px;
+        height: 72px;
+        left: -80px;
     }
 }
