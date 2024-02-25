@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style-1320px.css">
     <link rel="stylesheet" href="style-960px.css">
     <link rel="stylesheet" href="style-660px.css">
-
+    <link rel="stylesheet" href="style-320px.css">
 </head>
 
 
@@ -59,6 +59,9 @@
 <main class="main">
     <section class="about">
         <div class="about__backstage">
+            <button class="about__backstage-button">
+                Watch online
+            </button>
             <div class="container container-backstage">
                 <div class="about__backstage-image">
                     <img src="assets/images/bamoo-cap.jpg" alt="bamboo cap old man">
@@ -186,7 +189,7 @@
         </div>
     </section>
 
-    <section class="pick_and_feed">
+    <section class="pick-and-feed">
         <div class="container container-pick-and-feed">
             <div class="pick-and-feed__info">
                 <div class="pick-and-feed__info-title">Pick and feed a friend</div>
@@ -200,7 +203,7 @@
                 </div>
                 <div class="pick-and-feed__process-steps">
                     <div class="pick-and-feed__process-step">
-                        <div class="pick-and-feed_process-step-image">
+                        <div class="pick-and-feed__process-step-image">
                             <img src="./assets/images/payment.png" alt="Payment">
                         </div>
                         <div class="pick-and-feed__process-step-name">
@@ -212,7 +215,7 @@
                         <img src="./assets/images/arrow_vector_curve.png" alt="Arrow">
                     </div>
                     <div class="pick-and-feed__process-step">
-                        <div class="pick-and-feed_process-step-image">
+                        <div class="pick-and-feed__process-step-image">
                             <img src="./assets/images/donation.png" alt="Donation">
                         </div>
                         <div class="pick-and-feed__process-step-name">
@@ -224,7 +227,7 @@
                         <img src="./assets/images/arrow_vector_curve.png" alt="Arrow">
                     </div>
                     <div class="pick-and-feed__process-step">
-                        <div class="pick-and-feed_process-step-image">
+                        <div class="pick-and-feed__process-step-image">
                             <img src="./assets/images/monkey.png" alt="Monkey">
                         </div>
                         <div class="pick-and-feed__process-step-name">
@@ -510,7 +513,10 @@
     })
     splideAbout.on('resize', ()=>{
         splideAbout.options = {
-            perPage: 2+((window.innerWidth>960)?1:0),
+            perPage: 1+((window.innerWidth>660)?1:0)+((window.innerWidth>960)?1:0),
+            grid:{
+                rows: 4-((window.innerWidth>660)?2:0),
+            }
         };
     })
 </script>
