@@ -5,12 +5,18 @@
     .header__content-button{
         display: none;
     }
+    .header__bottom{
+        padding-top: 56px;
+    }
     .header__content-title{
         width: 119px;
         height: 119px;
+        margin-bottom: 45px;
         p{
             width: 128.13px;
             height: 102.44px;
+            top: 18px;
+            left: 15px;
             font-size: 28px;
         }
     }
