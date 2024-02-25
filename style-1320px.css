@@ -321,7 +321,7 @@ h3{
     bottom: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.pick_and_feed{
+.pick-and-feed{
     background: linear-gradient(-19.79deg, rgba(254, 210, 144, 0.7) 29.239%,rgb(254, 189, 171) 101.099%,rgba(254, 210, 144, 0.7) 106.584%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%);
     opacity: 0.9;
     padding-top: 69px;
@@ -385,7 +385,7 @@ h3{
 .pick-and-feed__process-arrow img:last-child{
     display: none;
 }
-.pick-and-feed_process-step-image{
+.pick-and-feed__process-step-image{
     display: flex;
     justify-content: center;
     align-items: center;

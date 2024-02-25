@@ -76,4 +76,41 @@
         height: 72px;
         left: -80px;
     }
+    .pick-and-feed{
+        padding-top: 20px;
+    }
+    .container-pick-and-feed{
+        padding: 0;
+        padding-top: 20px;
+        width: 300px;
+        padding-bottom: 40px;
+    }
+    .pick-and-feed__info-title{
+        font-size: 24px;
+    }
+    .pick-and-feed__info-subtitle{
+        font-size: 18px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .pick-and-feed__info-text{
+        display: none;
+    }
+    .pick-and-feed__process-steps{
+        flex-direction: column;
+    }
+    .pick-and-feed__process-step-name{
+        margin-top: 10px
+    }
+    .pick-and-feed__process-arrow{
+        transform: rotate(85deg);
+    }
+    .pick-and-feed__process-steps div:nth-child(2) img:last-child{
+        top: -100px;
+        right: -10px;
+    }
+    .pick-and-feed__process-steps div:nth-child(4) img:last-child{
+        top: -100px;
+        right: 0;
+    }
 }
