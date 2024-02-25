@@ -513,7 +513,10 @@
     })
     splideAbout.on('resize', ()=>{
         splideAbout.options = {
-            perPage: 2+((window.innerWidth>960)?1:0),
+            perPage: 1+((window.innerWidth>660)?1:0)+((window.innerWidth>960)?1:0),
+            grid:{
+                rows: 4-((window.innerWidth>660)?2:0),
+            }
         };
     })
 </script>
