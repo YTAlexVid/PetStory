@@ -154,7 +154,7 @@
     .reviews__title{
         margin-top: 60px;
     }
-    .footer__top .footer__media{
+    .footer__media-660px{
         display: block;
         margin: 0;
     }
@@ -174,5 +174,8 @@
     }
     .footer__navigation{
         margin-right: 65px;
+    }
+    .footer__subscribe{
+        display: none;
     }
 }
