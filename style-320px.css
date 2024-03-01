@@ -133,4 +133,39 @@
         right: -30px;
         bottom: -30px;
     }
+    .footer__media-660px{
+        display: none;
+    }
+    .footer__top-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .footer__media-320px{
+        display: flex;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .footer__main{
+        width: 136px;
+    }
+    .footer__link-home{
+        border: none;
+        width: 128px;
+        height: 30px;
+    }
+    .footer__link-home-text{
+        width: 128px;
+    }
+    .bamboo{
+        top: 1px;
+        left: 76px;
+    }
+    .footer__media-link img{
+        margin-right: 30px;
+    }
+    .footer__media-link:last-child img{
+        margin-right: 0;
+    }
 }
