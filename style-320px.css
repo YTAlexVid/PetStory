@@ -168,4 +168,19 @@
     .footer__media-link:last-child img{
         margin-right: 0;
     }
+    .footer__donate{
+        margin-bottom: 30px;
+    }
+    .footer__bottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer__credits{
+        margin-bottom: 30px;
+    }
+    .footer__navigation{
+        gap: 30px;
+        margin-right: 0;
+        align-self: center;
+    }
 }
