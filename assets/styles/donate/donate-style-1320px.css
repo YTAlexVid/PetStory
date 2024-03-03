@@ -306,6 +306,10 @@ h3{
     width: 129px;
     height: 42px;
 }
+.footer__input-result{
+    margin-top: 10px;
+    display: none;
+}
 .footer__donate{
     border-radius: 5px;
     border: none;
