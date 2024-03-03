@@ -198,18 +198,47 @@ h3{
     backdrop-filter: blur(4px);
     padding: 40px 92px 62px;
     background: rgba(255, 255, 255, 0.52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .pick_and_feed__info-title{
     color: rgb(254, 144, 19);
     font-size: 48px;
     line-height: 120%;
     text-align: center;
+    margin-bottom: 21px;
 }
 .pick_and_feed__info-text{
     color: rgb(51, 59, 65);
     font-size: 24px;
     line-height: 120%;
     text-align: left;
+}
+.pick_and_feed__diet_calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pick_and_feed__diet_calculator-inner{
+    margin-right: 11px;
+}
+.pick_and_feed__diet_calculator-result{
+    color: rgb(0, 0, 0);
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 80%;
+    text-align: center;
+    margin-bottom: 11px;
+}
+.pick_and_feed__diet_calculator-text{
+    color: rgb(51, 59, 65);
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+}
+.pick_and_feed__diet_calculator-sign{
+    margin-right: 64px;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
