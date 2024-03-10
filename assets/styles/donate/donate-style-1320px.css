@@ -257,11 +257,14 @@ h3{
     margin-bottom: 12px;
 }
 .pick_and_feed__progress_bar-point{
+    border: 10px solid transparent;
+    position: relative;
+}
+.pick_and_feed__progress_bar-point-inner{
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: rgb(255, 238, 46);
-    position: relative;
 }
 .pick_and_feed__progress_bar-prices{
     display: flex;
