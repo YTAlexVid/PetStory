@@ -261,10 +261,11 @@ h3{
     height: 10px;
     border-radius: 50%;
     background: rgb(255, 238, 46);
+    position: relative;
 }
 .pick_and_feed__progress_bar-prices{
     display: flex;
-    width: 834px;
+    width: 800px;
     justify-content: space-between;
 }
 .pick_and_feed__progress_bar-price{
@@ -272,8 +273,35 @@ h3{
     font-size: 26px;
     font-weight: 500;
     text-transform: uppercase;
+    width: 1px;
 }
-
+.pick_and_feed__progress_bar-price-selected{
+    color: rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::after{
+    content: "";
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 5px;
+    top: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::before{
+    content: "";
+    width: 19px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 5px;
+    top: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(254, 144, 19);
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
