@@ -240,6 +240,40 @@ h3{
 .pick_and_feed__diet_calculator-sign{
     margin-right: 64px;
 }
+.pick_and_feed__progress_bar-label{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.pick_and_feed__progress_bar-points{
+    display: flex;
+    background: #72828E;
+    height: 2px;
+    width: 810px;
+    border: 12px #404950 solid;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.pick_and_feed__progress_bar-point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(255, 238, 46);
+}
+.pick_and_feed__progress_bar-prices{
+    display: flex;
+    width: 834px;
+    justify-content: space-between;
+}
+.pick_and_feed__progress_bar-price{
+    color: rgb(51, 59, 65);
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
