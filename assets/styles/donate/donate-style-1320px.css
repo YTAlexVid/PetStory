@@ -277,6 +277,8 @@ h3{
     font-weight: 500;
     text-transform: uppercase;
     width: 1px;
+    user-select: none;
+    transition: 0.5s;
 }
 .pick_and_feed__progress_bar-price-selected{
     color: rgb(254, 144, 19);
