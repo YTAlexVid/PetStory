@@ -1,7 +1,12 @@
-let progress_bar_points = document.querySelector('.pick_and_feed__progress_bar-points');
-let progress_bar_prices = document.querySelector('.pick_and_feed__progress_bar-prices');
-let selected_index = -1;
+const progress_bar_points = document.querySelector('.pick_and_feed__progress_bar-points');
+const progress_bar_prices = document.querySelector('.pick_and_feed__progress_bar-prices');
+const calculator_result = document.querySelector('.pick_and_feed__diet_calculator-result');
+const prices_arr = [5000, 2000, 1000, 500, 250, 100, 50 ,25];
 
+let selected_index = -1;
+function recalc(){
+    calculator_result.innerHTML=prices_arr[selected_index]/250;
+}
 progress_bar_points.addEventListener('click', e=>{
     if(!e.target.classList.contains('pick_and_feed__progress_bar-point') 
         && !e.target.classList.contains('pick_and_feed__progress_bar-point-inner') 
@@ -24,6 +29,7 @@ progress_bar_points.addEventListener('click', e=>{
         child.children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
         progress_bar_prices.children[selected_index].classList.toggle('pick_and_feed__progress_bar-price-selected');
     }
+    recalc();
 })
 progress_bar_prices.addEventListener('click', e=>{
     if(!e.target.classList.contains('pick_and_feed__progress_bar-price')) return;
@@ -40,4 +46,5 @@ progress_bar_prices.addEventListener('click', e=>{
         child.children[2].classList.toggle('pick_and_feed__progress_bar-price-selected');
         progress_bar_points.children[selected_index].classList.toggle('pick_and_feed__progress_bar-point-selected');
     }
+    recalc();
 })
