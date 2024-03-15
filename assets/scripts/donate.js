@@ -1,8 +1,12 @@
 let progress_bar_points = document.querySelector('.pick_and_feed__progress_bar-points');
 let progress_bar_prices = document.querySelector('.pick_and_feed__progress_bar-prices');
 let selected_index = -1;
+
 progress_bar_points.addEventListener('click', e=>{
-    if(!e.target.classList.contains('pick_and_feed__progress_bar-point') && !e.target.classList.contains('pick_and_feed__progress_bar-point-inner')) return;
+    if(!e.target.classList.contains('pick_and_feed__progress_bar-point') 
+        && !e.target.classList.contains('pick_and_feed__progress_bar-point-inner') 
+        && !e.target.classList.contains('pick_and_feed__progress_bar-point-after') 
+        && !e.target.classList.contains('pick_and_feed__progress_bar-point-before')) return;
     let parent = e.target.parentNode, child=e.target;
     if(parent.classList.contains('pick_and_feed__progress_bar-point')){
         child = parent;
@@ -12,10 +16,12 @@ progress_bar_points.addEventListener('click', e=>{
     if(selected_index_next!==selected_index){
         if(selected_index!==-1){
             progress_bar_prices.children[selected_index].classList.toggle('pick_and_feed__progress_bar-price-selected');
-            progress_bar_points.children[selected_index].classList.toggle('pick_and_feed__progress_bar-point-selected');
+            progress_bar_points.children[selected_index].children[0].classList.toggle('pick_and_feed__progress_bar-point-selected');
+            progress_bar_points.children[selected_index].children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
         }
         selected_index=selected_index_next;
-        child.classList.toggle('pick_and_feed__progress_bar-point-selected');
+        child.children[0].classList.toggle('pick_and_feed__progress_bar-point-selected');
+        child.children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
         progress_bar_prices.children[selected_index].classList.toggle('pick_and_feed__progress_bar-price-selected');
     }
 })
@@ -26,10 +32,12 @@ progress_bar_prices.addEventListener('click', e=>{
     if(selected_index_next!==selected_index){
         if(selected_index!==-1){
             progress_bar_prices.children[selected_index].classList.toggle('pick_and_feed__progress_bar-price-selected');
-            progress_bar_points.children[selected_index].classList.toggle('pick_and_feed__progress_bar-point-selected');
+            progress_bar_points.children[selected_index].children[0].classList.toggle('pick_and_feed__progress_bar-point-selected');
+            progress_bar_points.children[selected_index].children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
         }
         selected_index=selected_index_next;
-        child.classList.toggle('pick_and_feed__progress_bar-price-selected');
+        child.children[0].classList.toggle('pick_and_feed__progress_bar-price-selected');
+        child.children[2].classList.toggle('pick_and_feed__progress_bar-price-selected');
         progress_bar_points.children[selected_index].classList.toggle('pick_and_feed__progress_bar-point-selected');
     }
 })
