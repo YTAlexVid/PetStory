@@ -227,6 +227,7 @@ h3{
     padding: 0;
     background: none;
     border: none;
+    cursor: pointer;
 }
 .about__card{
     width: 370px !important;

@@ -256,16 +256,6 @@ h3{
     align-items: center;
     margin-bottom: 12px;
 }
-.pick_and_feed__progress_bar-point{
-    border: 10px solid transparent;
-    position: relative;
-}
-.pick_and_feed__progress_bar-point-inner{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgb(255, 238, 46);
-}
 .pick_and_feed__progress_bar-prices{
     display: flex;
     width: 800px;
@@ -279,33 +269,51 @@ h3{
     width: 1px;
     user-select: none;
     transition: 0.5s;
+    cursor: pointer;
 }
+
 .pick_and_feed__progress_bar-price-selected{
     color: rgb(254, 144, 19);
+    transition: 0.5s;
 }
-.pick_and_feed__progress_bar-point-selected::after{
+.pick_and_feed__progress_bar-point{
+    border: 10px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+.pick_and_feed__progress_bar-point-inner{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(255, 238, 46);
+}
+.pick_and_feed__progress_bar-point-after{
     content: "";
     width: 36px;
     height: 36px;
     display: block;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0%);
     left: 5px;
     top: 5px;
     border-radius: 50%;
     border: 2px solid rgb(254, 144, 19);
 }
-.pick_and_feed__progress_bar-point-selected::before{
+.pick_and_feed__progress_bar-point-before{
     content: "";
     width: 19px;
     height: 19px;
     display: block;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0%);
     left: 5px;
     top: 5px;
     border-radius: 50%;
     border: 2px solid rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected{
+    transition: 0.5s;
+    transform: translate(-50%, -50%) scale(100%);
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
