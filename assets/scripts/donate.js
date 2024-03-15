@@ -42,9 +42,9 @@ progress_bar_prices.addEventListener('click', e=>{
             progress_bar_points.children[selected_index].children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
         }
         selected_index=selected_index_next;
-        child.children[0].classList.toggle('pick_and_feed__progress_bar-price-selected');
-        child.children[2].classList.toggle('pick_and_feed__progress_bar-price-selected');
-        progress_bar_points.children[selected_index].classList.toggle('pick_and_feed__progress_bar-point-selected');
+        progress_bar_points.children[selected_index].children[0].classList.toggle('pick_and_feed__progress_bar-point-selected');
+        progress_bar_points.children[selected_index].children[2].classList.toggle('pick_and_feed__progress_bar-point-selected');
+        child.classList.toggle('pick_and_feed__progress_bar-price-selected');
     }
     recalc();
 })
