@@ -335,6 +335,7 @@ h3{
         border: 2px solid rgb(146, 150, 153);
         background: transparent;
         border-radius: 4px;
+        padding-right: 40px;
     }
     label{
         position: absolute;
