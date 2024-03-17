@@ -21,10 +21,77 @@
         }
     }
 
-
-
-
-
+    .reopening__title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .reopening__text{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .pick_and_feed__inner{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    .main{
+        padding-bottom: 11px;
+    }
+    .pick_and_feed__donation_info{
+        font-size: 24px;
+    }
+    .pick_and_feed__info-title{
+        font-size: 24px;
+    }
+    .pick_and_feed__info-text{
+        font-size: 16px;
+    }
+    .pick_and_feed__diet_calculator-panda img{
+        width: 151.4px;
+        height: 111.92px;
+    }
+    .pick_and_feed__diet_calculator-result{
+        font-size: 40px;
+    }
+    .pick_and_feed__diet_calculator-text{
+        font-size: 9px;
+    }
+    .pick_and_feed__diet_calculator-sign img{
+        width: 7.89px;
+        height: 7.89px;
+    }
+    .pick_and_feed__progress_bar-points{
+        width: 285px;
+    }
+    .pick_and_feed__progress_bar-prices{
+        width: 265px;
+        margin-left: 10px;
+    }
+    .pick_and_feed__progress_bar-price{
+        font-size: 13px;
+    }
+    .pick_and_feed__progress_bar-point-inner{
+        width: 5px;
+        height: 5px;
+    }
+    .pick_and_feed__progress_bar-point-after{
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+        left:2px;
+        top:3px;
+    }
+    .pick_and_feed__progress_bar-point-before {
+        width: 11.5px;
+        height: 11.5px;
+        border-width: 1px;
+        left:2px;
+        top:3px;
+    }
+    .pick_and_feed__share_with_friends{
+        text-align: center;
+        font-size: 18px;
+    }
 
     .footer__media-660px{
         display: none;
