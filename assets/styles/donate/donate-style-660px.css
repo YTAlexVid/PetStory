@@ -13,18 +13,26 @@
     .header__menu-burger{
         margin-right: 20px;
     }
+    .header__menu-list{
+        .header__link-home{
+            opacity: 0;
+            height: 15px;
+        }
+    }
     .header__link-home{
-        border: none;
+        border: 2px solid orange;
         height: unset;
+        margin: 12px 24px;
         .header__link-home-text{
             width: 47px;
-            font-size: 12.29px;
+            font-size: 20px;
+            color: orange;
             margin: 3.55px 0 3.55px;
             height: unset;
         }
         .bamboo{
-            top: 17px;
-            left: -14px;
+            top: 33px;
+            left: -19px;
             img {
                 width: 45px;
                 height: 13px;
@@ -37,7 +45,7 @@
     .header__copyright{
         display: none;
     }
-    .header__menu-burger{
+    .header__burger_menu{
         display: block;
     }
     .header__content{
@@ -62,8 +70,28 @@
         margin-bottom: 40px;
     }
 
-
-
+    .pick_and_feed__progress_bar-points{
+        width: 600px;
+    }
+    .pick_and_feed__progress_bar-prices{
+        width: 570px;
+    }
+    .pick_and_feed__progress_bar-price:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__progress_bar-point:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__info-title{
+        font-size: 48px;
+    }
+    .pick_and_feed__info-text{
+        font-size: 24px;
+        text-align: center;
+    }
+    .main{
+        padding-bottom: 46px;
+    }
 
     .footer__media-660px{
         display: block;
