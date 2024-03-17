@@ -10,6 +10,12 @@ button{
     font-style: normal;
     font-weight: 400;
 }
+button:hover{
+    background: rgb(228, 114, 9);
+}
+button:active{
+    background: rgb(75, 146, 0);
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -40,41 +46,117 @@ h3{
         color: rgb(253, 141, 30);
     }
 }
-.header__menu-burger{
+
+.header__burger_menu{
     display: none;
-    width: 18px;
-    height: 10px;
+    position: fixed;
+    right: 40px;
+    height: 26px;
+}
+#header__burger_menu-toggle {
+    opacity: 0;
+    position: absolute;
+}
+
+#header__burger_menu-toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#header__burger_menu-toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#header__burger_menu-toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#header__burger_menu-toggle:checked ~ .header__burger_menu-box {
+    visibility: visible;
+    right: 0;
+}
+#header__burger_menu-toggle:checked ~ .menu__btn > span{
+    background: #616161;
+}
+#header__burger_menu-toggle:checked ~ .menu__btn > span::before{
+    background: #616161;
+}
+#header__burger_menu-toggle:checked ~ .menu__btn > span::after{
+    background: #616161;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+    border-radius: 2px;
+
+    transition-duration: .25s;
+}
+.menu__btn > span{
     position: relative;
 }
-.header__menu-burger span{
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    background: white;
-    border-radius: 10px;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
 }
-.header__menu-burger::before{
-    content: "";
-    top:0;
-    position: absolute;
-    left:0;
-    width:100%;
-    height: 2px;
-    background: white;
-    border-radius: 10px;
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
 }
-.header__menu-burger::after{
-    content: "";
-    bottom:0;
-    position: absolute;
-    left:0;
-    width:100%;
-    height: 2px;
-    background: white;
-    border-radius: 10px;
+
+.header__burger_menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 20px 0;
+
+    list-style: none;
+
+    background-color: #ECEFF1;
+    box-shadow: -1px 0 6px rgba(0, 0, 0, .2);
+
+    transition-duration: .25s;
+}
+
+.header__burger_menu-item {
+    display: block;
+    padding: 12px 24px;
+
+    color: #333;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: .25s;
+}
+.header__burger_menu-item:hover {
+    background-color: #CFD8DC;
 }
 .header__link a{
     text-decoration: none;
@@ -225,7 +307,8 @@ h3{
     width: 62px;
     height: 62px;
     padding: 0;
-    background: none;
+    border-radius: 50%;
+    background: linear-gradient(121.04deg, rgb(249, 128, 75) 2.797%,rgb(254, 144, 19) 99.669%);
     border: none;
     cursor: pointer;
 }
@@ -236,11 +319,12 @@ h3{
 }
 .about__button-cards img{
     display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    width: 16px;
+    height: 8px;
+    margin: 0 auto;
 }
-.about__button-cards-next img{
+.about__button-cards-prev img{
     transform: scaleX(-100%);
 }
 .about__button-cards-prev{
@@ -322,7 +406,7 @@ h3{
     bottom: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.pick-and-feed{
+.pick_and_feed{
     background: linear-gradient(-19.79deg, rgba(254, 210, 144, 0.7) 29.239%,rgb(254, 189, 171) 101.099%,rgba(254, 210, 144, 0.7) 106.584%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%);
     opacity: 0.9;
     padding-top: 69px;
@@ -336,7 +420,7 @@ h3{
     padding-top:41px;
     padding-bottom: 50px;
 }
-.pick-and-feed__info-title{
+.pick_and_feed__info-title{
     color: rgb(254, 144, 19);
     font-size: 48px;
     line-height: 120%;
@@ -344,11 +428,11 @@ h3{
     margin-bottom: 30px;
     text-align: center;
 }
-.pick-and-feed__info-subtitle{
+.pick_and_feed__info-subtitle{
     margin-left: 99px;
     margin-bottom: 40px;
 }
-.pick-and-feed__info-text:not(:last-child){
+.pick_and_feed__info-text:not(:last-child){
     margin-bottom: 10px;
     margin-left: 99px;
     font-size: 16px;
@@ -356,37 +440,37 @@ h3{
     line-height: 130%;
     letter-spacing: 0;
 }
-.pick-and-feed__info-text:last-child{
+.pick_and_feed__info-text:last-child{
     margin-bottom: 60px;
     margin-left:99px;
     a{
         border-bottom: solid 1px orange;
     }
 }
-.pick-and-feed__process{
+.pick_and_feed__process{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 70px;
 }
-.pick-and-feed__process-steps{
+.pick_and_feed__process-steps{
     display: inline-flex;
     gap: 30px;
 }
-.pick-and-feed__process-title{
+.pick_and_feed__process-title{
     font-size: 36px;
     line-height: 130%;
     letter-spacing: 0;
     text-align: center;
     margin-bottom: 40px;
 }
-.pick-and-feed__process-arrow img:first-child{
+.pick_and_feed__process-arrow img:first-child{
     margin-top: 62px;
 }
-.pick-and-feed__process-arrow img:last-child{
+.pick_and_feed__process-arrow img:last-child{
     display: none;
 }
-.pick-and-feed__process-step-image{
+.pick_and_feed__process-step-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,11 +480,11 @@ h3{
     border: solid 1px rgb(253, 142, 32);
     border-radius: 5px;
 }
-.pick-and-feed__process-step-name{
+.pick_and_feed__process-step-name{
     margin-top: 30px;
     max-width: 168px;
 }
-.pick-and-feed__button{
+.pick_and_feed__button{
     width: 298px;
     height: 54px;
     flex-shrink: 0;

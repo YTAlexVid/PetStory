@@ -3,9 +3,15 @@ const progress_bar_prices = document.querySelector('.pick_and_feed__progress_bar
 const calculator_result = document.querySelector('.pick_and_feed__diet_calculator-result');
 const prices_arr = [5000, 2000, 1000, 500, 250, 100, 50 ,25];
 
+let disabled_result = true;
 let selected_index = -1;
-function recalc(){
-    calculator_result.innerHTML=prices_arr[selected_index]/250;
+function recalc() {
+    calculator_result.innerHTML = prices_arr[selected_index] / 250;
+    if (disabled_result){
+        disabled_result=false;
+        document.querySelector('.pick_and_feed__diet_calculator-inner').style.display='block';
+        document.querySelector('.pick_and_feed__diet_calculator-sign').style.display='block';
+    }
 }
 progress_bar_points.addEventListener('click', e=>{
     if(!e.target.classList.contains('pick_and_feed__progress_bar-point') 

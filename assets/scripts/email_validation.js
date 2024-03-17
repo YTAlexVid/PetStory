@@ -8,6 +8,8 @@ subscribe_button.disabled=true;
 subscribe_button.style.cursor='not-allowed';
 subscribe_field.style.borderColor='rgb(254, 143, 24)';
 subscribe_result.style.display='none';
+subscribe_result.textContent = 'Invalid Email';
+subscribe_result.style.color='red';
 
 subscribe_field.addEventListener("input", e=>{
     let input_text = e.target.value;
@@ -21,8 +23,7 @@ subscribe_field.addEventListener("input", e=>{
     let isValid = input_text.match(email_regex);
     subscribe_button.disabled=!isValid;
     subscribe_field.style.borderColor = (isValid?'green':'red');
-    subscribe_result.style.display='block';
-    subscribe_result.style.color=(isValid?'green':'red');
+    subscribe_result.style.display=(isValid?'none':'block');
     subscribe_button.style.cursor=(isValid?'pointer':'not-allowed');
-    subscribe_result.textContent = (isValid?'Success':'Invalid email');
+
 })
