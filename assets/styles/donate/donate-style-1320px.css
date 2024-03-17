@@ -381,7 +381,17 @@ h3{
         border-color: rgb(75, 146, 0);
     }
 }
-
+.pick_and_feed__button-feed{
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    background: linear-gradient(121.04deg, rgb(249, 128, 75) -4.058%,rgb(254, 144, 19) 108.987%);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
