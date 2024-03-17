@@ -397,6 +397,12 @@ h3{
     font-weight: 500;
     line-height: 140%;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.pick_and_feed__share_with_friends{
+    color: rgb(51, 59, 65);
+    font-size: 18px;
+    line-height: 140%;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
