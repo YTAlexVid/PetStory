@@ -118,14 +118,19 @@
                         <div class="pick_and_feed__progress_bar-price">$25</div>
                     </div>
                 </div>
-                <div class="pick_and_feed__custom-donation">
-
-                </div>
-                <div class="pick_and_feed__donation-type">
-
-                </div>
+                <form class="pick_and_feed__custom-donation" name="pick_and_feed__custom-donation">
+                    <input type="text" name="pick_and_feed__custom-donation-field" id="pick_and_feed__custom-donation-field"
+                    placeholder="Another amount">
+                    <label for="pick_and_feed__custom-donation-field"><img src="./assets/images/dollar_sign.png" alt="dollar sign"></label>
+                </form>
+                <form class="pick_and_feed__donation-type" name="pick_and_feed_donation-type">
+                    <input type="radio" name="pick_and_feed__donation-type-button" id="pick_and_feed__donation-type-monthly">
+                    <label for="pick_and_feed__donation-type-monthly">Monthly</label>
+                    <input type="radio" name="pick_and_feed__donation-type-button" id="pick_and_feed__donation-type-once">
+                    <label for="pick_and_feed__donation-type-monthly">Once</label>
+                </form>
                 <button class="pick_and_feed__button-feed">
-
+                    Feed a friend now
                 </button>
                 <div class="pick_and_feed__share_with_friends">
                     Share with your friends on social networks

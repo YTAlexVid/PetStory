@@ -258,7 +258,7 @@ h3{
 }
 .pick_and_feed__progress_bar-prices{
     display: flex;
-    width: 800px;
+    width: 780px;
     justify-content: space-between;
 }
 .pick_and_feed__progress_bar-price{
@@ -315,6 +315,73 @@ h3{
     transition: 0.5s;
     transform: translate(-50%, -50%) scale(100%);
 }
+.pick_and_feed__custom-donation{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    position: relative;
+    input{
+        width: 268px;
+        height: 54px;
+        color: rgb(146, 150, 153);
+        font-size: 18px;
+        padding-left: 10px;
+        line-height: 140%;
+        border: 2px solid rgb(146, 150, 153);
+        background: transparent;
+        border-radius: 4px;
+    }
+    label{
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        top: 50%;
+        right: 10px;
+        transform: translate(-50%, -50%);
+    }
+}
+.pick_and_feed__donation-type{
+    margin-bottom: 30px;
+    display: flex;
+    label{
+        color: rgb(51, 59, 65);
+        font-size: 18px;
+        line-height: 140%;
+        margin-left:5px;
+    }
+    label:nth-child(2){
+        margin-right: 50px;
+    }
+    input{
+        appearance: none;
+        background-color: transparent;
+        margin: 0;
+        font: inherit;
+        color: rgb(254, 144, 19);
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid rgb(254, 144, 19);
+        border-radius: 50%;
+        transform: translateY(0.2em);
+        display: grid;
+        place-content: center;
+    }
+    input::before{
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em rgb(75, 146, 0);
+    }
+    input:checked::before {
+        transform: scale(1);
+    }
+    input:checked{
+        border-color: rgb(75, 146, 0);
+    }
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
     background-color: black;
