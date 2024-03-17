@@ -1,0 +1,120 @@
+@media screen and (max-width: 960px) {
+    .container{
+        max-width: 640px;
+    }
+    .container-header-top{
+        height: unset;
+    }
+    .header__menu-list{
+        margin-left: 20px;
+        height: unset;
+        width: 47px;
+    }
+    .header__menu-burger{
+        margin-right: 20px;
+    }
+    .header__menu-list{
+        .header__link-home{
+            opacity: 0;
+            height: 15px;
+        }
+    }
+    .header__link-home{
+        border: 2px solid orange;
+        height: unset;
+        margin: 12px 24px;
+        .header__link-home-text{
+            width: 47px;
+            font-size: 20px;
+            color: orange;
+            margin: 3.55px 0 3.55px;
+            height: unset;
+        }
+        .bamboo{
+            top: 33px;
+            left: -19px;
+            img {
+                width: 45px;
+                height: 13px;
+            }
+        }
+    }
+    .header__link:not(:first-child){
+        display: none;
+    }
+    .header__copyright{
+        display: none;
+    }
+    .header__burger_menu{
+        display: block;
+    }
+    .header__content{
+        margin-right: 60px;
+    }
+    .header__content-title{
+        height: 237px;
+        width: 237px;
+        margin-bottom: 0;
+        p{
+
+            width: 256px;
+            height: 204px;
+            top: 37px;
+            left: 33px;
+            font-size: 54.29px;
+            letter-spacing: 0;
+        }
+    }
+    .header__content-button{
+        margin-left: -330px;
+        margin-bottom: 40px;
+    }
+
+    .pick_and_feed__progress_bar-points{
+        width: 600px;
+    }
+    .pick_and_feed__progress_bar-prices{
+        width: 570px;
+    }
+    .pick_and_feed__progress_bar-price:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__progress_bar-point:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__info-title{
+        font-size: 48px;
+    }
+    .pick_and_feed__info-text{
+        font-size: 24px;
+        text-align: center;
+    }
+    .main{
+        padding-bottom: 46px;
+    }
+
+    .footer__media-660px{
+        display: block;
+        margin: 0;
+    }
+    .footer__bottom .footer__media{
+        display: none;
+    }
+    .footer__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        .designer{
+            margin-bottom: 10px;
+        }
+    }
+    .footer__navigation{
+        margin-right: 65px;
+    }
+    .footer__subscribe{
+        display: none;
+    }
+}
