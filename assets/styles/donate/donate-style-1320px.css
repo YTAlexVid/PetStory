@@ -10,6 +10,12 @@ button{
     font-style: normal;
     font-weight: 400;
 }
+button:hover{
+    background: rgb(228, 114, 9);
+}
+button:active{
+    background: rgb(75, 146, 0);
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;

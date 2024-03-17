@@ -111,20 +111,20 @@
     .container-pick-and-feed{
         padding-right: 32px;
     }
-    .pick-and-feed__info-text:not(:nth-child(5)){
+    .pick_and_feed__info-text:not(:nth-child(5)){
         margin-left: 20px
     }
-    .pick-and-feed__info-subtitle{
+    .pick_and_feed__info-subtitle{
         margin-left: 20px;
     }
-    .pick-and-feed__process-steps{
+    .pick_and_feed__process-steps{
         position: relative;
         gap: 15px;
     }
-    .pick-and-feed__process-arrow img:first-child{
+    .pick_and_feed__process-arrow img:first-child{
         display: none;
     }
-    .pick-and-feed__process-arrow img:last-child{
+    .pick_and_feed__process-arrow img:last-child{
         position: absolute;
         display: block;
         transform: translateX(-50px) translateY(-15px);

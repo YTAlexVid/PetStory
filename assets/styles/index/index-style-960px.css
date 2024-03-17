@@ -52,10 +52,10 @@
         max-width: 908px;
         padding-right: 32px;
     }
-    .pick-and-feed__info-text:not(:nth-child(5)){
+    .pick_and_feed__info-text:not(:nth-child(5)){
         margin-left: 49px
     }
-    .pick-and-feed__info-subtitle{
+    .pick_and_feed__info-subtitle{
         margin-left: 49px;
     }
     .testimonial__inner{

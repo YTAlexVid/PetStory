@@ -10,6 +10,12 @@ button{
     font-style: normal;
     font-weight: 400;
 }
+button:hover{
+    background: rgb(228, 114, 9);
+}
+button:active{
+    background: rgb(75, 146, 0);
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -322,7 +328,7 @@ h3{
     bottom: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.pick-and-feed{
+.pick_and_feed{
     background: linear-gradient(-19.79deg, rgba(254, 210, 144, 0.7) 29.239%,rgb(254, 189, 171) 101.099%,rgba(254, 210, 144, 0.7) 106.584%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%),linear-gradient(-19.79deg, rgba(254, 189, 171, 0.74) 29.239%,rgba(243, 169, 248, 0.66) 50.209%,rgb(224, 216, 240) 80.361%,rgb(234, 247, 254) 128.424%,rgb(234, 247, 254) 150.358%);
     opacity: 0.9;
     padding-top: 69px;
@@ -336,7 +342,7 @@ h3{
     padding-top:41px;
     padding-bottom: 50px;
 }
-.pick-and-feed__info-title{
+.pick_and_feed__info-title{
     color: rgb(254, 144, 19);
     font-size: 48px;
     line-height: 120%;
@@ -344,11 +350,11 @@ h3{
     margin-bottom: 30px;
     text-align: center;
 }
-.pick-and-feed__info-subtitle{
+.pick_and_feed__info-subtitle{
     margin-left: 99px;
     margin-bottom: 40px;
 }
-.pick-and-feed__info-text:not(:last-child){
+.pick_and_feed__info-text:not(:last-child){
     margin-bottom: 10px;
     margin-left: 99px;
     font-size: 16px;
@@ -356,37 +362,37 @@ h3{
     line-height: 130%;
     letter-spacing: 0;
 }
-.pick-and-feed__info-text:last-child{
+.pick_and_feed__info-text:last-child{
     margin-bottom: 60px;
     margin-left:99px;
     a{
         border-bottom: solid 1px orange;
     }
 }
-.pick-and-feed__process{
+.pick_and_feed__process{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 70px;
 }
-.pick-and-feed__process-steps{
+.pick_and_feed__process-steps{
     display: inline-flex;
     gap: 30px;
 }
-.pick-and-feed__process-title{
+.pick_and_feed__process-title{
     font-size: 36px;
     line-height: 130%;
     letter-spacing: 0;
     text-align: center;
     margin-bottom: 40px;
 }
-.pick-and-feed__process-arrow img:first-child{
+.pick_and_feed__process-arrow img:first-child{
     margin-top: 62px;
 }
-.pick-and-feed__process-arrow img:last-child{
+.pick_and_feed__process-arrow img:last-child{
     display: none;
 }
-.pick-and-feed__process-step-image{
+.pick_and_feed__process-step-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,11 +402,11 @@ h3{
     border: solid 1px rgb(253, 142, 32);
     border-radius: 5px;
 }
-.pick-and-feed__process-step-name{
+.pick_and_feed__process-step-name{
     margin-top: 30px;
     max-width: 168px;
 }
-.pick-and-feed__button{
+.pick_and_feed__button{
     width: 298px;
     height: 54px;
     flex-shrink: 0;
