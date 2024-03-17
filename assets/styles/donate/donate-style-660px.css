@@ -62,8 +62,25 @@
         margin-bottom: 40px;
     }
 
-
-
+    .pick_and_feed__progress_bar-points{
+        width: 600px;
+    }
+    .pick_and_feed__progress_bar-prices{
+        width: 570px;
+    }
+    .pick_and_feed__progress_bar-price:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__progress_bar-point:nth-child(-n+3){
+        display: none;
+    }
+    .pick_and_feed__info-title{
+        font-size: 48px;
+    }
+    .pick_and_feed__info-text{
+        font-size: 24px;
+        text-align: center;
+    }
 
     .footer__media-660px{
         display: block;
